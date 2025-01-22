@@ -11,7 +11,7 @@ if (applePrice > bananaPrice) {
 }
 
 
-//conditional operator
+//conditional operator (ternary operator)
 
 const boy = 'younger';
 /*

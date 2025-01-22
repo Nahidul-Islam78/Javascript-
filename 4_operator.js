@@ -1,11 +1,12 @@
 //arithmetic operator
 let a = 50
-let b = 30
+let b = 2
 console.log('the addition is :' + (a + b))
 console.log('the subtraction is :' + (a - b))
 console.log('the multiplication is :' + (a * b))
 console.log('the division is :' + (a / b))
 console.log('the modulus is :' + (a % b))
+console.log('the Exponentiation is:'+(a**b));
 
 //Assignment operator
 console.log("add a+5= " + (a += 5))
