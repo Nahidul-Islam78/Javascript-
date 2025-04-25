@@ -61,4 +61,15 @@ for (let p = 0; p < product.length; p++){
 }
 */
 
-
+//
+/*
+const authentication = {
+  fname: 'Nahidul',
+  lname: 'Islam',
+  email: 'mdnahid75@gmail.com',
+  greeting: function () {
+    return this.fname+" "+ this.lname + ",Welcome sir!";
+  }
+}
+console.log(authentication.greeting());
+*/
