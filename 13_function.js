@@ -58,4 +58,10 @@ const square = (n)=>{
   const result = n * n;
   return result;
 }
-console.log(square(45));
+console.log(square(3));
+
+const exponentiation = (r) => {
+  const result = r ** r;
+  return result;
+}
+console.log(exponentiation(3));
