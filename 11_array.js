@@ -35,13 +35,13 @@ console.log(n1);
 
 
 //use array factory pattern//////
-
-/*const n2 =Array(5);
+/*
+const n2 =Array(5);
 console.log(n2, n2.length);
 n2[3] = 'jahid';
 n2[7]='hamim'
-console.log(n2);*/
-
+console.log(typeof n2);
+*/
 
 //array traversing///////
 /*
@@ -202,6 +202,101 @@ function matrixSum(matrixQ, matrixY) {
 const matrixZ = matrixSum(matrixQ, matrixY);
 console.log(matrixZ);
 */
+
+//convert array to string
+const fruits = ['apple', 'banana', 'lichi', 'mango'];
+let strFruits = fruits.toString();
+console.log(fruits);
+console.log(typeof strFruits);
+
+//use forEach method
+function fruitsName(value) {
+  console.log(value);
+}
+fruits.forEach(fruitsName);
+
+//use Array.isArray(arrayName) & instanceof operator Recognize an Array
+console.log(Array.isArray(fruits));
+console.log(strFruits instanceof Array);
+///////////////////////array method//////////////////////////////////////
+const animals = ['dog', 'cat', 'lion', 'cow', 'fox'];
+console.log(animals.at(3));
+let joinArray = (animals.join("+"));
+console.log(typeof joinArray);
+animals.push("ox");
+console.log(animals);
+animals.pop();
+console.log(animals);
+animals.unshift("ox");
+console.log(animals);
+animals.shift();
+console.log(animals);
+animals[0] = 'crow'; //change array element
+console.log(animals);
+/////
+const animals2 = ['manky', 'hen'];
+const allAnimals = animals2.concat(animals);
+console.log(allAnimals);
+// two dimensional to one dimensional array
+const myArray = [[1, 2], [3, 4, 5], [6, 7, 8]];
+console.log(myArray);
+const newArray = myArray.flat();
+console.log(newArray);
+console.log(newArray.flatMap(x => [x * 5]));
+
+
+
+//
+fruits.splice(3, 1, 'papaya'); 
+console.log(fruits);
+fruits.splice(3, 1);
+console.log(fruits)
+const jackFruits = fruits.toSpliced(0, 1);
+console.log(jackFruits);
+
+
+//////////// array sort///////////////////////////////////
+const studentsName = ['Karim', 'Islam', 'Nahid', 'Jahed', 'Marup'];
+console.log(studentsName);
+console.log(studentsName.toSorted())  //toSorted return new array
+console.log(studentsName.sort()); 
+console.log(studentsName.toReversed())  //create new array      
+console.log(studentsName.reverse());
+
+//numeric sort
+const number = [23, 56, 14, 5, 78, 3, 87, 45, 26, 14];
+console.log(number.sort(function (a, b) { return a - b })); //compare function return positive ,negative & zero 
+console.log(number.sort((m, n) => {
+  return n-m;
+  
+}))
+console.log(`the maximum number is :${Math.max.apply(null, number)}`);
+console.log('the small number is : ' + Math.min.apply(null, number));
+
+//////////////////Array iteration////////
+//forEach method
+function myNumber(index, value, array) {
+  console.log(value);
+  console.log(index);
+  console.log(array);
+}
+number.forEach(myNumber);
+//map() method
+function squareNumbers(value) {
+  console.log(value * value);
+}
+number.map(squareNumbers);
+//filter method 
+function bigNumber(value) {
+  return value > 30;
+}
+console.log(number.filter(bigNumber));
+
+function sumNumbers(total,value) {
+  return total+value;
+}
+console.log(number.reduce(sumNumbers));
+console.log(number.indexOf(78));
 
 
 
