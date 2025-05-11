@@ -25,3 +25,16 @@ const customer = 'man';
 let says = customer == 'women' ? 'hello mem!' : 'hello sir!';
 console.log(says + 'can i help you?');
 
+//Nullish Coalescing Operator (??)
+const Roll = 45;
+const text = 'Messing'
+const Result = Roll ?? text;
+console.log(`The roll is ${Result}`);
+
+//Optional Chaining Operator (?.)
+const students = {
+  names: 'karim',
+  Roll: 78,
+  class: "Four"
+}
+console.log("the GPA is :" + students?.gpa);  //return undefine
