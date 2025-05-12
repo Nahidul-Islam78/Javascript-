@@ -37,4 +37,28 @@ const students = {
   Roll: 78,
   class: "Four"
 }
-console.log("the GPA is :" + students?.gpa);  //return undefine
+console.log("the GPA is :" + students?.gpa);//return undefine
+
+//শার্টের দাম 1000 টাকার বেশি হলে এবং কুপন থাকলে তোকে 20 পারসেন্ট ডিসকাউন্ট দেয়া হবে। এর জন্য প্রোগ্রাম লিখ।
+const shirtPrice = 1080;
+const coupon = true;
+if (shirtPrice > 1000 && coupon == true) {
+  console.log('you can got 20 present discount');
+} else {
+  console.log("SORRY! you cna't got any discount ");
+}
+
+//তুই নিজের দোকান খুলছিস। তোর দোকানে কেউ 3000 টাকার বেশি কেনাকাটা করলে 5% ডিসকাউন্ট, আর 6000 টাকার বেশি কেনাকাটা করলে 15% ডিসকাউন্ট দিবি। যদি এক বন্ধু এসে 4500 টাকার জিনিস কিনে, তবে তাকে কত টাকা দিতে হবে?
+
+const shoppingPrice = 4500;
+if (shoppingPrice > 6000) {
+  let discountPrice = shoppingPrice / 100 * 15;
+  let totalPrice = shoppingPrice - discountPrice;
+  console.log(`you total shopping amount is ${totalPrice}`);
+} else if (shoppingPrice > 3000) {
+  let discountPrice = (shoppingPrice / 100) * 5;
+  let totalPrice = shoppingPrice - discountPrice;
+  console.log(`you total shopping amount is ${totalPrice}`);
+} else {
+  console.log(`your total shopping amount is ${shoppingPrice}`);
+}
