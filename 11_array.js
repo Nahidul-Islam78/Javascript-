@@ -299,4 +299,3 @@ console.log(number.reduce(sumNumbers));
 console.log(number.indexOf(78));
 
 
-

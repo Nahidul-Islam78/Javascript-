@@ -16,3 +16,11 @@ console.log(typeof m);
 console.log(typeof h);
 console.log(typeof i);
 console.log(typeof j)
+let p = 10;
+let q = 15;
+console.log(p, q);
+let tem = p;
+p = q;
+q = tem;
+console.log(p,q)
+
