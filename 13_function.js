@@ -286,4 +286,16 @@ function multiply(a, b) {
 const [firstMultiply, secundMultiply] = multiply(6, 5);
 console.log(firstMultiply, secundMultiply);
 
+///////////////////add rest operation///////////////
+
+function Sum(a, b, ...someNumber) {
+  let sum = 0;
+  for (n of someNumber) {
+    sum += n;
+  }
+  return sum / someNumber.length;
+  
+  
+}
+console.log(Sum(12, 5, 9, 47, 85, 25));
 

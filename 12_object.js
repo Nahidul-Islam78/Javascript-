@@ -168,3 +168,17 @@ const item = {
 };
 const { price, phone } = item;
 console.log(price);
+
+
+/////////add rest ////////////////
+const programmer = {
+  name: 'sophia',
+  language: 'javascript',
+  experience: '5 year',
+  specialty: 'frontend',
+  tools: 'react'
+};
+
+const { language, specialty, ...details } = programmer;
+console.log(language,specialty);
+console.log(details);
