@@ -124,4 +124,47 @@ Object.seal(person);
 person['password'] = 1478525;
 person.age = 45;
 console.log(person);
+//////////////////////////////////////////////////////////////
+const students = {
+  names: "Mustafizur",
+  age: 20,
+  marks: [96, 87, 87]
+}
+const studentsMarks = students.marks;
+let totalMarks = 0;
+for (n of studentsMarks) {
+  totalMarks += n;
+}
+let averageMarks = totalMarks / studentsMarks.length;
+const display = `
+Students Names:${students.names}
+Average Marks:${averageMarks}
+`;
+console.log(display);
 
+///////destructuring object///////////
+const employingName = {
+  name: "Islam",
+  age:32,
+  designation: "worker",
+
+}
+const { name, age:employAge, designation,salary='N/A'} = employingName;
+console.log(employAge);
+console.log(salary);
+///////////////////////////
+function employ({name,age}) {
+  console.log(`employ name:${name},employ age:${age}`);
+}
+console.log(employ(employingName));
+
+
+
+////////////
+const item = {
+  name: "Mobile",
+  price: 45120,
+  phone: "samsung"
+};
+const { price, phone } = item;
+console.log(price);

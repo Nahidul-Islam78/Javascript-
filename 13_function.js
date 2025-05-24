@@ -224,3 +224,66 @@ function single(m) {
   return newRoll
 }
 console.log(single(roll));
+
+function sumNumbers(a=0,b=0,c=0) {
+  return a + b + c;
+}
+console.log(sumNumbers(20, 30));
+function books(names = { price: 10,quantity:1}) {
+  return names;
+}
+console.log(books());
+
+function num(arr) {
+  if (arr === undefined) {
+    return [5, 10, 15];
+  } {
+    const newArr = [];
+    for (n of arr) {
+      n *= 2;
+      newArr.push(n);
+    }
+    return newArr;
+  }
+  
+}
+console.log(num([10, 20, 30]));
+
+const title = 'Welcome';
+const body = 'This is a dynamic template.';
+const html = `<div>
+<h1>${title}</h1>
+<p>${body}</p>
+</div>`;
+console.log(html);
+
+///////////////arrow function ///////////////
+const sum = (a, b) => a + b;
+console.log(sum(4, 5));
+
+
+const firstSumLest = (arr) => arr[0]+arr[arr.length-1];
+console.log(firstSumLest([10, 15, 8, 7,2]));
+
+const noParameter = () => 'unKnown';
+console.log(noParameter());
+const customer = {
+  names: "Islam",
+  amount: 536915
+};
+const customerAmount = customer.amount;
+const division = (taka) => taka / 5;
+console.log(division(customerAmount));
+
+
+const operation = (a, b) => [a + b, a - b, a * b, a / b];
+const [addition, subtraction, multiplication, divisions] = operation(9, 6);
+console.log(multiplication);
+
+function multiply(a, b) {
+  return [a * 5, b * 9];
+}
+const [firstMultiply, secundMultiply] = multiply(6, 5);
+console.log(firstMultiply, secundMultiply);
+
+

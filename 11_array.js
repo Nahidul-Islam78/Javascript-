@@ -297,5 +297,14 @@ function sumNumbers(total,value) {
 }
 console.log(number.reduce(sumNumbers));
 console.log(number.indexOf(78));
+////////////destructuring array////
+const numr = [25, 36, 25, 48, 49];
+const [first] = numr;
+console.log(first);
+///////
+const color = ['red', 'green', 'blue', 'yellow'];
+const [ , secundColor, ,] = color;
+console.log(secundColor );
+
 
 
