@@ -307,4 +307,25 @@ const [ , secundColor, ,] = color;
 console.log(secundColor );
 
 
+///////////spread operator//////////////////
+const technology = ['variable', 'condition', 'loop', 'array'];
+const bestTopic = [...technology, 'function'];
+console.log(technology)
+console.log(bestTopic)
+const allTechnology = [...technology, ...bestTopic];
+console.log(allTechnology);
+
+console.log(Math.max(...numr));
+
+const myFruit = ['orange', 'papaya'];
+const fruit = ['apple', 'banana', 'mango', ...myFruit];
+console.log(fruit);
+
+const frontend = ['javascript'];
+const backend = ['node js'];
+const database = ['mongoDB'];
+const fullStack = [...frontend, ...backend, ...database];
+console.log(fullStack);
+
+
 

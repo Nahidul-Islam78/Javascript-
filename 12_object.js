@@ -182,3 +182,20 @@ const programmer = {
 const { language, specialty, ...details } = programmer;
 console.log(language,specialty);
 console.log(details);
+
+////////spread operator////////
+const website = {
+  name: 'my site',
+  type: 'e-commerce',
+  status: 'active'
+}
+const myWebsite = { ...website };
+myWebsite.price = 564;
+myWebsite.type = 'personal';
+console.log(myWebsite);
+console.log(website);
+
+const young = { name: 'khairul', age: 14, country: "B-bariya" };
+const oneYoung = { ...young };
+delete oneYoung.country;
+console.log(oneYoung);
