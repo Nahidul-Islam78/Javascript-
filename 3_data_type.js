@@ -8,7 +8,7 @@ let h = [10, 20, 30];
 let i = BigInt(12555555555568764556983585585555);
 let j;
 
-console.log(typeof a);
+console.log(typeof(a));
 console.log(typeof d);
 console.log(typeof f);
 console.log(typeof g);
@@ -24,3 +24,6 @@ p = q;
 q = tem;
 console.log(p,q)
 
+let car="";
+console.log(typeof car);
+console.log([(1, 2, 3, 4)].constructor);
