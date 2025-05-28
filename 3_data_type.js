@@ -27,3 +27,16 @@ console.log(p,q)
 let car="";
 console.log(typeof car);
 console.log([(1, 2, 3, 4)].constructor);
+
+
+let number = '3.1416';
+console.log(Boolean(number))
+console.log(parseFloat(number));
+let marks = "98";
+let marksNumber = +marks;
+console.log(marksNumber);
+
+
+// decimal to binary //
+let s = 457;
+console.log(parseInt(s.toString(2)));
