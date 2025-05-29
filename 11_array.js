@@ -327,5 +327,103 @@ const database = ['mongoDB'];
 const fullStack = [...frontend, ...backend, ...database];
 console.log(fullStack);
 
+//problem solve use map() method
+const itemPrice = [30, 45, 20, 60, 10];
+const itemNewPrice = itemPrice.map(price => price + 5);
+console.log(itemNewPrice);
+//problem solve use filter()
+const playerName = ['messi', 'maradona', 'pele', 'zidane', 'ronaldo'];
+const bigPlayerName = playerName.filter(name => name.length > 5)
+const later = playerName.map(n => n[2])
+console.log(later);
+const firstLater = playerName.find(later => later[0] == 'm')
+console.log(firstLater);
+console.log(bigPlayerName);
+// flat()
 
+const arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+const allArr = arr.flat(4);
+console.log(allArr);
+
+//problem solve use find()
+const rollNumber=[10,18,15,6,25,23,7]
+const twentyUpFirstNumber = rollNumber.find(roll => roll > 20)
+console.log(twentyUpFirstNumber);
+
+//problem solve use some() method
+const price = [90, 99, 30, 120, 48, 110];
+const hundredUpPrice = price.some(taka => taka > 200);
+console.log(hundredUpPrice); 
+
+
+//problem solve use ever() method 
+const marks = [90, 20,15, 10, 30];
+const isFiveDivision = marks.every(number => number % 5 == 0);
+console.log(isFiveDivision);
+
+
+//reduce method
+//syntax:   arrayName.reduce((accumulator/prevuesValue,currentValue)=>doSomething,initialValue)
+//
+const prices = [5, 10, 15, 20, 25];
+const sumOfPrice = prices.reduce((sum, value) => sum + value, 0);
+console.log(sumOfPrice);
+//
+const item = [
+  { name: 'shampo', price: 100 },
+  { name: 'soap', price: 50 },
+  {name:'toothpast',price:75}
+]
+const backItem = item.reverse();
+console.log(backItem);
+const totalItemPrice = item.reduce((totalPrice, itemprice) => totalPrice + itemprice.price, 0);
+console.log(totalItemPrice);
+// make maximum value in array
+const arrayNumber = [10, 70, 30, 40, 50];
+const maxArrayNumber = arrayNumber.reduce((max, value) => {
+  if (max < value) {
+    max = value;
+  }
+  return max;
+},0);
+console.log(maxArrayNumber);
+
+/// sort()
+const studentsInfo = [
+  { name: 'karim', marks: 89, roll: 1 },
+  { name: 'rahim', marks: 78, roll: 2 },
+  { name: 'karim', marks: 99, roll: 3 },
+  { name: 'karim', marks: 57, roll: 4 },
+  { name: 'karim', marks: 99, roll: 5 },
+  { name: 'karim', marks: 87, roll: 6 },
+  { name: 'karim', marks: 72, roll: 7 },
+  { name: 'karim', marks: 96, roll: 8 },
+  { name: 'karim', marks: 70, roll: 9 },
+  { name: 'karim', marks: 50, roll: 10},
+  { name: 'karim', marks: 97, roll: 11},
+  { name: 'karim', marks: 78, roll: 12},
+  { name: 'karim', marks: 89, roll: 13},
+  { name: 'karim', marks: 39, roll: 14},
+  { name: 'karim', marks: 79, roll: 15},
+  { name: 'karim', marks: 76, roll: 16},
+  { name: 'karim', marks: 48, roll: 17},
+  { name: 'karim', marks: 88, roll: 18},
+  { name: 'karim', marks: 74, roll: 19},
+  { name: 'karim', marks: 93, roll: 20},
+  { name: 'karim', marks: 66, roll: 21},
+  { name: 'karim', marks: 80, roll: 22},
+];
+
+const listOfStudentResult = studentsInfo.sort((firstMark, secundMark) => secundMark.marks-firstMark.marks);
+console.log(listOfStudentResult);
+
+
+//slice method 
+const fruitss = ['apple', 'banana', 'cherry', 'date'];
+const favoriteFruit = fruitss.slice(1, 3);
+console.log(favoriteFruit);
+
+const topPlayer = ['messi', 'naymer', 'ronaldo', 'mbappe'];
+const newTopPlayer = topPlayer.splice(1, 1, 'halland');
+console.log(topPlayer);
 
