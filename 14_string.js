@@ -91,3 +91,31 @@ let names = "Nahidul";
 let Result = "A+";
 let displayResult = `Congress ${names}!Your grad is ${Result}.`;
 console.log(displayResult);
+
+let businessDistrict = 'chattogramg';
+businessDistrict[0] = 'm';
+console.log(businessDistrict);
+console.log(businessDistrict[businessDistrict.length-1]);
+
+const emailName = 'Mdght@gmaiL.com';
+console.log(emailName.toLocaleLowerCase()
+);
+const language = 'javaScript';
+console.log(language.includes('scrip'));
+const friendName = "joni,mahi,kabir,josim";
+const newFriends = friendName.split(',');
+console.log(newFriends);
+console.log(newFriends.join(","));
+const strNew = "function if else while for break continue";
+console.log(strNew.split(" "));
+
+const display = "  console log debug  ";
+console.log(display);
+console.log(display.trim());
+
+const favoriteFood = 'I love apples,and apples tasty';
+let reversFood = " ";
+for (f of favoriteFood) {
+     reversFood = f + reversFood;
+}
+console.log(reversFood);
