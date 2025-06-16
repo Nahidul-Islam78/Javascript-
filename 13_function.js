@@ -299,3 +299,41 @@ function Sum(a, b, ...someNumber) {
 }
 console.log(Sum(12, 5, 9, 47, 85, 25));
 
+//callback function
+const employ = {
+  name: 'karim',
+  age: 19,
+  salary: 20000,
+};
+
+function show(data, callback) {
+  data.job = 'developer';
+  callback(data);
+}
+function employData(value) {
+  for (v in value) {
+    console.log(v);
+  }
+}
+console.log(show(employ, employData));
+
+//
+function numberProcessor(n,cb) {
+  const result = n / 5;
+  cb(result);
+}
+function displayNumber(value) {
+  console.log(value)
+
+}
+console.log(numberProcessor(50, displayNumber));
+
+///
+function schoolDetails() {
+  const schoolName = "islam school";
+  function displaySchoolName() {
+    console.log(schoolName);
+  }
+  displaySchoolName();
+}
+console.log(schoolDetails());
